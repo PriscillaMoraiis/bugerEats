@@ -28,5 +28,9 @@ describe(" Suite de registro do bugerEats",() => {
 
     });
 
+    it("Deve mostrar mensagem de erro quando não tiver nenhum meio de entrega selecionado", () =>{
+
+    });
+
 
 });
