@@ -23,3 +23,28 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+import 'cypress-file-upload';
+
+import {
+    randomName,
+    randomEmail,
+    randomzipCode,
+}from './utils/faker';
+
+Cypress.Commands.add("HomeEats", () => {
+    return cy.visit("https://buger-eats.vercel.app/")
+    
+});
+
+Cypress.Commands.add("randomName", (selector) => {
+    return cy.get(selector).type(randomName());  
+});
+
+Cypress.Commands.add("randomEmail", (selector) => {
+    return cy.get(selector).type(randomEmail()); 
+});
+
+Cypress.Commands.add("randomzipCode", (selector) => {
+    return cy.get(selector).type(randomzipCode()); 
+});
+
