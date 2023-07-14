@@ -10,7 +10,6 @@
   "author": "Priscilla de Oliveira Morais",
   "license": "ISC",
   "devDependencies": {
-    "@faker-js/faker": "^8.0.2",
     "cypress": "^12.17.1",
     "cypress-file-upload": "^5.0.8"
   },
