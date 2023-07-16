@@ -28,11 +28,18 @@ import 'cypress-file-upload';
 import {
     randomName,
     randomEmail,
-    randomzipCode,
+    randomPhone,
+
 }from './utils/faker';
 
 Cypress.Commands.add("HomeEats", () => {
-    return cy.visit("https://buger-eats.vercel.app/")
+    cy.visit("https://buger-eats.vercel.app/")
+    cy.viewport(1920,1080)
+    cy.get('#page-home main h1')
+        .should('have.text',"Seja um parceiro entregador pela Buger Eats")
+        .should("be.visible")
+    cy.get('a[href*="/deliver"]').click()
+    cy.url().should('include', '/deliver');
     
 });
 
@@ -44,7 +51,7 @@ Cypress.Commands.add("randomEmail", (selector) => {
     return cy.get(selector).type(randomEmail()); 
 });
 
-Cypress.Commands.add("randomzipCode", (selector) => {
-    return cy.get(selector).type(randomzipCode()); 
+Cypress.Commands.add("randomPhone", (selector) => {
+    return cy.get(selector).type(randomPhone()); 
 });
 

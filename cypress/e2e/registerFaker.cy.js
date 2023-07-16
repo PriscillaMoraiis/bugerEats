@@ -1,5 +1,5 @@
 import {faker} from '@faker-js/faker'
-import { zipCode } from '../support/utils/faker';
+import { randomEmail, randomName, randomPhone, zipCode } from '../support/utils/faker';
 
 describe(" Suite para estudo de testes delivery do bugerEats",() => {
     context("Suite de testes de cadastro ",()=>{
@@ -13,14 +13,14 @@ describe(" Suite para estudo de testes delivery do bugerEats",() => {
             cy.get('a[href*="/"]').click()
         });
     
-        it("Deve ser possivel cadastrar com sucesso", () =>{
+        it.only("Deve ser possivel cadastrar com sucesso", () =>{
             cy.contains("Cadastre-se para fazer entregas")
                 .should("be.visible")
         
-            cy.get('input[name="name"]').type("Floribela Flor");
+            cy.get('input[name="name"]').type(randomName());
             cy.get('input[name="cpf"]').type('27366489352'); 
-            cy.get('input[name="email"]').type('flor.bela@gmail.com'); 
-            cy.get('input[name="whatsapp"]').type('11 966669945');
+            cy.get('input[name="email"]').type(randomEmail()); 
+            cy.get('input[name="whatsapp"]').type("21 666599887");
             
             cy.get('input[name="postalcode"]').type('15086428'); 
             cy.get('input[type="button"][value= "Buscar CEP"]').click(); 
@@ -46,7 +46,7 @@ describe(" Suite para estudo de testes delivery do bugerEats",() => {
     
             cy.get('input[name="name"]').clear()
             cy.get('input[name="cpf"]').type('27366489352'); 
-            cy.get('input[name="email"]').type('flor.bela@gmail.com'); 
+            cy.get('input[name="email"]').type(randomEmail()); 
             cy.get('input[name="whatsapp"]').type('11 966669945');
         
             cy.get('input[name="postalcode"]').type('15086428'); 

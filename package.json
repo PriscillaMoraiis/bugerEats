@@ -10,8 +10,12 @@
   "author": "Priscilla de Oliveira Morais",
   "license": "ISC",
   "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
     "cypress": "^12.17.1",
-    "cypress-file-upload": "^5.0.8"
+    "cypress-file-upload": "^5.0.8",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-cypress": "^2.13.3",
+    "prettier": "3.0.0"
   },
   "dependencies": {
     "faker": "^6.6.6"

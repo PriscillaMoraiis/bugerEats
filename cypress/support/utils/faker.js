@@ -20,8 +20,4 @@ export function randomEmail(){
     return randomEmail;
 }
 
-export function zipCode(){
-    const randomzipCode = faker.address.zipCode();
-    return randomzipCode;
-}
 
