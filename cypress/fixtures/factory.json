@@ -1,0 +1,33 @@
+{
+    "name": "Usuário Perfeito",
+    "cpf": "27366489352",
+    "email": "flor.bela@gmail.com",
+    "whatsapp": "11 966669945",
+    "address": {
+        "postalcode": "15086428",
+        "street": "Travessa José Carvalho Filho",
+        "number": "245",
+        "details": "apto 2",
+        "district": "Estância São Pedro Vila Azul",
+        "city_state": "São José do Rio Preto/SP"
+    },
+    "delivery_method": "Moto",
+    "cnh": "cnh_gratuita.jpeg",
+
+    "name1": "cpf errado",
+    "cpf1": "273664893A2",
+    "email1": "flor.bela",
+    "whatsapp1": "11 966669945",
+    
+    "name2": "Email incompleto",
+    "cpf2": "27366489352",
+    "email2": "flor.bela",
+    "whatsapp2": "11 966669945",
+
+    "name3": "Email errado",
+    "cpf3": "27366489352",
+    "email3": "flor.bela@gmail",
+    "whatsapp3": "11 966669945"
+   
+}
+
