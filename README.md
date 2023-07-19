@@ -28,7 +28,7 @@ Selecione também o tipo de browser que gostaria de utilizar e clique em **Start
 Chrome, Edge, Electron
 ```
 
-Visualize os arquivos de teste disponíveis, selecione o arquivo desejado, em instantes abrirá a a tela para acompanhamento dos testes. 
+Visualize os arquivos de teste disponíveis, selecione o arquivo desejado, em instantes abrirá a tela para acompanhamento dos testes. 
 
 
 
