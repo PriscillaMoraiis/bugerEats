@@ -146,6 +146,9 @@ describe(" Suite para estudo de testes delivery do bugerEats",() => {
             cy.get('.alert-error').should('have.text','Selecione o método de entrega')
         });
 
+        const a = cy.get('bla')
+        a.click()
+
     }); 
 
 });
